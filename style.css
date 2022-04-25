@@ -1,0 +1,63 @@
+table,
+tr,
+td {
+    border: none;
+    border-collapse: collapse;
+}
+
+.tite_text {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.background_room{
+    background-color: rgb(138, 211, 238);
+}
+
+.room{
+    color: blue;
+    text-align: center;
+}
+.inside_table{
+    border: 1px solid black;
+    height: 400px;
+}
+.inside_segment{
+    width: 100px;
+    height: auto;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+}
+.inside_segment:hover{
+    border: 2px solid black;
+    color: rgb(255, 145, 145);
+    background-color: rgb(47, 183, 232);
+    transition: all 1s;
+}
+.inside_segment:not(:hover){
+    transition: 1s;
+}
+
+body{
+    animation: background-gradient 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes background-gradient {
+    0%{
+    background-color: white;}
+    25%{
+        background-color:rgb(26, 190, 255);
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: rgb(162, 0, 255);
+    }
+    100%{
+        background-color: rgb(0, 255, 17);
+    }
+}
