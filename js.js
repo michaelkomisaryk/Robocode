@@ -7,7 +7,9 @@
 // let getInner = ;
 // console.log(getInner)
  let temp= prompt("тумпература")
- //document.getElementById("d").innerHTML = answer;
+ let hum= prompt("вологість")
+ document.getElementById("d").innerHTML = hum;
+ document.getElementById("b").innerHTML = temp;
 
  function getTemp(){
   
@@ -22,3 +24,18 @@
       alert("normal")
   }
  }
+ function getHum(){
+  
+
+  if(hum <= 25){
+  alert("you have to moisten the room");
+    }
+   else if(hum >= 75 ) {
+     alert ("you have to dry the room");
+   }
+   else{
+       alert("normal")
+   }
+  }
+
+ 
